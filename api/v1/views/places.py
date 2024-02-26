@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Place route"""
 
-from api.v1.views import app_views
 from flask import abort, jsonify, make_response, request
 from models import storage
 from models.place import Place
+from api.v1.views import app_views
 from models.city import City
 from models.user import User
 
