@@ -2,14 +2,13 @@
 """Review route"""
 
 from api.v1.views import app_views
-from flask import abort, jsonify, make_response, request
-from models import storage
-from models.city import City
 from models.state import State
 from models.place import Place
 from models.review import Review
 from models.user import User
-
+from flask import abort, jsonify, make_response, request
+from models import storage
+from models.city import City
 
 @app_views.route('/places/<place_id>/reviews', methods=['GET'])
 def get_reviews(place_id):
